@@ -1,0 +1,23 @@
+/*
+Theme Name: Jbr
+Theme URI: http://site.com
+Author: Julia Briend
+Author URI: http://juliabr.com
+Version: 1.0
+*/
+
+@import "helpers/_variables.scss";
+@import "helpers/_mixins.scss";
+@import "helpers/_content-style.scss";
+@import "helpers/_helpers.scss";
+
+@import "base/_reset.scss";
+@import "base/_typography.scss";
+
+@import "components/_pagination.scss";
+
+@import "layout/_grid.scss";
+@import "layout/_header.scss";
+@import "layout/_footer.scss";
+@import "layout/_navigation.scss";
+@import "layout/_forms.scss";

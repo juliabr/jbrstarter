@@ -1,0 +1,67 @@
+@mixin content-style {
+   line-height: $baseline;
+   p {
+      margin-bottom: $baseline;
+   }
+   sup, sub {
+      a { text-decoration: none; }
+   }
+   ul, ol {
+      margin-left: 3em;
+      margin-bottom: 1em;
+   }
+   h2,h3,h4,h5,h6 {
+      color: $black;
+   }
+   h2 {
+      font-family: $custom-font;
+      font-size: 28px;
+      font-weight: 400;
+      margin-top: 1em;
+      margin-bottom: 1em;
+   }
+   h3 {
+      border-top: 1px solid $black;
+      padding-top: .5em;
+      font-family: $custom-font;
+      font-size: 1.8em;
+      margin-top: 1em;
+      margin-bottom: .5em;
+   }
+   h4 {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: .5em;
+   }
+   blockquote {
+      padding: 0 .5em;
+      border-left: 1px solid $black;
+      font-size: .9em;
+      margin-bottom: 1em;
+      margin-left: 4em;
+      font-style: italic;
+      p {
+         margin-bottom: 0;
+      }
+   }
+   a {
+      color: $color1;
+      &:hover, &:active {
+         text-decoration: underline;
+      }
+   }
+   .alignright, .alignleft, .aligncenter {
+      margin-bottom: $baseline*2;
+   }
+   .aligncenter {
+      margin-top: $baseline*2;
+   }
+   .alignright {
+      float: left;
+      margin-right: $baseline;
+   }
+   .alignright {
+      float: right;
+      margin-left: $baseline;
+   }
+}

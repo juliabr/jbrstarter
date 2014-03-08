@@ -1,0 +1,37 @@
+/* Main backgrounds, Fonts & Colors */
+html {
+   font-family: $regular-font;
+   line-height: $baseline;
+   color: $black;
+   font-weight: normal;
+   font-size: $base-font-size;
+
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+   background-color: $bg-color;
+   font-family: $regular-font;
+   font-weight: normal;
+   color: $black;
+   font-size: 15px;
+   line-height: $baseline;
+   overflow: hidden;
+}
+
+a, a:link { text-decoration: none; color: $black; }
+a:hover { text-decoration: underline; }
+a:active { color: $color1;  text-decoration: none; }
+
+/* Titles */
+.entry-subtitle, .entry-title {
+   font-family: $custom-font;
+   font-weight: 500;
+   line-height: $baseline;
+}
+
+/* Content style */
+.entry-content {
+   @include content-style();
+}

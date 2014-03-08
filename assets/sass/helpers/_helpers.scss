@@ -1,0 +1,14 @@
+/* Clearfix */
+.clear { clear: both; }
+.clearfix:before, .clearfix:after { content: "."; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+.invisible { display: none; }
+
+.assistive-text {
+   @include hide();
+}
+.balance-text {
+	text-wrap: balanced;
+}

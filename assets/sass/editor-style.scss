@@ -1,0 +1,19 @@
+/*
+Theme Name: Jbr
+Theme URI: http://site.com
+Author: Julia Briend
+Author URI: http://juliabr.com
+Version: 1.0
+*/
+
+@import "helpers/_variables.scss";
+@import "helpers/_content-style.scss";
+
+.mceContentBody {
+   min-height: 100%;
+   font-size: 13px;
+   line-height: 1.5em;
+   font-family: Helvetica, Arial, sans-serif;
+   color: $black;
+   @include content-style(); /* Mixin from css/content-style.less */
+}

@@ -1,0 +1,43 @@
+/* Main nav */
+
+#main-nav {
+   padding: 0;
+   line-height: 1em;
+   float: left;
+   ul {
+      list-style: none;
+      li {
+         position: relative;
+         display: block;
+         float: left;
+         margin: 0;
+         text-align: center;
+         a {
+
+         }
+         &.current-menu-ancestor a, &.current-menu-item a {
+
+         }
+         .sub-menu {
+            li {
+               float: none;
+               text-align: left;
+               a {
+
+                  &:hover {
+
+                  }
+               }
+            }
+         }
+         &:hover {
+            a {
+
+            }
+            .sub-menu {
+               display: block;
+            }
+         }
+      }
+   }
+}

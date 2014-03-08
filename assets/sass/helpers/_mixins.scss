@@ -1,0 +1,33 @@
+
+
+/* !hide (for eyes only) */
+@mixin hide() {
+  border: none;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* !inline-block */
+@mixin inline-block($alignment: none) {
+  display: -moz-inline-stack;
+  display: inline-block;
+
+  @if $alignment and $alignment != none {
+    vertical-align: $alignment;
+  }
+
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+
+/* !min-height */
+@mixin min-height($height) {
+  min-height: $height;
+  _height: $height;
+}
