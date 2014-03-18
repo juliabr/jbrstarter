@@ -5,9 +5,6 @@ html {
    color: $black;
    font-weight: normal;
    font-size: $base-font-size;
-
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
 }
 
 a, a:link { text-decoration: none; color: $black; }
@@ -15,13 +12,15 @@ a:hover { text-decoration: underline; }
 a:active { color: $color1;  text-decoration: none; }
 
 /* Titles */
-.entry-subtitle, .entry-title {
-   font-family: $custom-font;
-   font-weight: 500;
-   line-height: $baseline;
+.entry-title {
+   font-size: 28px;
+   @extend .h1-like;
+}
+.entry-subtitle {
+   @extend .h2-like;
 }
 
 /* Content style */
 .entry-content {
-   @include content-style();
+   @extend .content-style;
 }

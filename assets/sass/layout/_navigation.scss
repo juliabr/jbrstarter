@@ -1,42 +1,48 @@
 /* Main nav */
 
-#main-nav {
-   padding: 0;
-   line-height: 1em;
-   float: left;
+.menu {
+   display: block;
    ul {
       list-style: none;
-      li {
-         position: relative;
-         display: block;
-         float: left;
-         margin: 0;
-         text-align: center;
+   }
+   li {
+      position: relative;
+      @include until($large) {
+         margin: 0 $baseline/2;
+      }
+      text-align: center;
+      a {
+
+         &:hover {
+
+         }
+      }
+      &.current-menu-ancestor,
+      &.current-page-ancestor,
+      &.current-menu-item,
+      &.current_page_item {
          a {
-
+            
          }
-         &.current-menu-ancestor a, &.current-menu-item a {
+      }
+      .sub-menu {
+         li {
+            float: none;
+            text-align: left;
+            a {
 
-         }
-         .sub-menu {
-            li {
-               float: none;
-               text-align: left;
-               a {
+               &:hover {
 
-                  &:hover {
-
-                  }
                }
             }
          }
-         &:hover {
-            a {
+      }
+      &:hover {
+         a {
 
-            }
-            .sub-menu {
-               display: block;
-            }
+         }
+         .sub-menu {
+            display: block;
          }
       }
    }

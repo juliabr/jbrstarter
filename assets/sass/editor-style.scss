@@ -11,9 +11,9 @@ Version: 1.0
 
 .mceContentBody {
    min-height: 100%;
-   font-size: 13px;
+   font-size: $base-font-size;
    line-height: 1.5em;
-   font-family: Helvetica, Arial, sans-serif;
+   font-family: $regular-font;
    color: $black;
-   @include content-style(); /* Mixin from css/content-style.less */
+   @extend .content-style;
 }

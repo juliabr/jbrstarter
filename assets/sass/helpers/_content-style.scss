@@ -1,5 +1,38 @@
-@mixin content-style {
+.heading-like {
+   font-family: $custom-font;
    line-height: $baseline;
+}
+.h1-like {
+   @extend .heading-like;
+   font-size: 36px;
+   line-height: $baseline*2;
+   margin-bottom: $baseline;
+}
+.h2-like {
+   @extend .heading-like;
+   font-size: 28px;
+   font-weight: 400;
+   margin-top: $baseline;
+   margin-bottom: $baseline;
+   line-height: $baseline*2;
+}
+.h3-like {
+   @extend .heading-like;
+}
+.h4-like {
+   font-size: 20px;
+   font-weight: bold;
+   margin-bottom: $baseline;
+}
+.h5-like {
+   font-size: $base-font-size;
+   font-weight: bold;
+   margin-bottom: $baseline;
+}
+
+.content-style {
+   line-height: $baseline;
+   font-size: $base-font-size;
    p {
       margin-bottom: $baseline;
    }
@@ -8,35 +41,26 @@
    }
    ul, ol {
       margin-left: 3em;
-      margin-bottom: 1em;
+      margin-bottom: $baseline;
    }
    h2,h3,h4,h5,h6 {
       color: $black;
    }
    h2 {
-      font-family: $custom-font;
-      font-size: 28px;
-      font-weight: 400;
-      margin-top: 1em;
-      margin-bottom: 1em;
+      @extend .h2-like;
    }
    h3 {
-      border-top: 1px solid $black;
-      padding-top: .5em;
-      font-family: $custom-font;
-      font-size: 1.8em;
-      margin-top: 1em;
-      margin-bottom: .5em;
+      @extend .h3-like;
    }
    h4 {
-      font-size: 1.2em;
-      font-weight: bold;
-      margin-bottom: .5em;
+      @extend .h4-like;
+   }
+   h5 {
+      @extend .h5-like;
    }
    blockquote {
-      padding: 0 .5em;
+      padding: 0 $baseline;
       border-left: 1px solid $black;
-      font-size: .9em;
       margin-bottom: 1em;
       margin-left: 4em;
       font-style: italic;
@@ -49,6 +73,9 @@
       &:hover, &:active {
          text-decoration: underline;
       }
+   }
+   .alignnone {
+      margin: 0 auto;
    }
    .alignright, .alignleft, .aligncenter {
       margin-bottom: $baseline*2;

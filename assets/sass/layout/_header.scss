@@ -1,8 +1,22 @@
 /* Header */
 
 #main-header-container {
-
+   
 }
 #main-header {
-   margin: 0 auto; 
+   position: relative;
+   margin: 0 auto $baseline;
+   max-width: $very-large;
+   a:hover { text-decoration: none; }
+}
+
+#main-title {
+
+}
+
+#main-nav {
+   margin: 0;
+   padding: 0 0 $baseline;
+   line-height: $baseline;
+   position: relative;
 }
