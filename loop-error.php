@@ -14,8 +14,8 @@
 	<h1 class="entry-title"><?php _e('Page not found', 'jbr'); ?></h1>
 
 	<div class="entry-content">
-		<p><?php _e('the page you were looking for doesn\'t exist', 'jbr'); ?></p> 
-		<p><a href="<?php bloginfo('url'); ?>" title="<?php _e('back to homepage', 'jbr'); ?>><?php _e('back to homepage', 'jbr'); ?></a></p>
+		<p><?php _e('The page you were looking for doesn\'t exist', 'jbr'); ?></p> 
+		<p><a href="<?php bloginfo('url'); ?>"><?php _e('Back to homepage', 'jbr'); ?></a></p>
 	</div>
 
 </article>

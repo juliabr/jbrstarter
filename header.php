@@ -46,7 +46,7 @@
 
 		<header id="main-header" role="banner" class="inner clearfix">
 			
-			<a href="<?php bloginfo( 'url' ); ?>" title="<?php bloginfo( 'description' ); ?> - <?php _e('back to homepage', 'jbr'); ?>" rel="home">
+			<a href="<?php bloginfo( 'url' ); ?>" title="<?php bloginfo( 'description' ); ?> - <?php _e('Back to homepage', 'jbr'); ?>" rel="home">
 				<hgroup id="main-title">
 					<h1><?php bloginfo( 'name' ); ?></h1>
 					<h2><?php bloginfo( 'description' ); ?></h2>

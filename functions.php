@@ -34,7 +34,6 @@ function jbr_setup_theme() {
 	/* Load extensions */
 	require_once( trailingslashit( TEMPLATEPATH ) . 'extensions/loop-pagination.php' );
 	require_once( trailingslashit( TEMPLATEPATH ) . 'extensions/get-the-image.php' );
-	require_once( trailingslashit( TEMPLATEPATH ) . 'extensions/breadcrumb-trail.php' );
 	require_once( trailingslashit( TEMPLATEPATH ) . 'extensions/entry-views.php' );
 
 	add_editor_style('assets/css/editor-style.css');

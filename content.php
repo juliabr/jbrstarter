@@ -11,7 +11,7 @@
 
 	<a href="<?php the_permalink(); ?>" class="entry-permalink">
 		<div class="entry-image">
-			<?php get_the_image('size=medium&link_to_post=0&default_image='.get_bloginfo('template_url').'/images/default.png'); ?>
+			<?php get_the_image('size=medium&link_to_post=0'); ?>
 		</div>
 		<h1 class="entry-title">
 			<?php the_title(); ?>
