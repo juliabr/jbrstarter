@@ -24,8 +24,6 @@ function jbr_options_do_page() {
 	if (!current_user_can('manage_options')) {
     	wp_die( __('You do not have sufficient permissions to access this page.') );
   	}
-
-	$movies = get_posts( array( 'numberposts' => 0, 'post_type' => 'movie', 'posts_per_page' => -1 ) );
 	?>
 
 	<div class="wrap">

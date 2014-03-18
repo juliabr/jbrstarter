@@ -10,16 +10,6 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-body {
-   background-color: $bg-color;
-   font-family: $regular-font;
-   font-weight: normal;
-   color: $black;
-   font-size: 15px;
-   line-height: $baseline;
-   overflow: hidden;
-}
-
 a, a:link { text-decoration: none; color: $black; }
 a:hover { text-decoration: underline; }
 a:active { color: $color1;  text-decoration: none; }
