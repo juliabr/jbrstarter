@@ -8,7 +8,7 @@
 
 		<footer id="main-footer" class="inner clearfix">
 			<div id="main-footer-first">
-				<p>Copyright &copy; <?php echo date('Y'); ?> - <a href="<?php echo home_url('/legal/'); ?>"<?php if(!is_home()) echo ' rel="nofollow"'; ?>><?php _e('Legal infos', 'jbr'); ?></a> - <a href="<?php echo home_url('/credits/'); ?>"<?php if(!is_home()) echo ' rel="nofollow"'; ?>><?php _e('Credits', 'jbr'); ?></a>
+				<p>Copyright &copy; <?php echo date('Y'); ?> - <a href="<?php echo home_url('/legal/'); ?>"<?php if(!is_home()) echo ' rel="nofollow"'; ?>><?php _e('Legal infos', 'jbr'); ?></a> - <a href="<?php echo home_url('/credits/'); ?>"<?php if(!is_home()) echo ' rel="nofollow"'; ?>><?php _e('Credits', 'jbr'); ?></a></p>
 			</div>
 		</footer>
 

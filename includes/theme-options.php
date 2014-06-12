@@ -15,7 +15,7 @@ function jbr_admin_init() {
 add_action( 'admin_menu', 'jbr_admin_setup' );
 function jbr_admin_setup() {
 
-	$admin_options_page = add_theme_page( 'Personnaliser', 'Personnaliser', 'manage_options', 'jbr_options', 'jbr_options_do_page');
+	$admin_options_page = add_theme_page( 'Theme options', 'Theme options', 'manage_options', 'jbr_options', 'jbr_options_do_page');
 
 }
 
@@ -28,7 +28,7 @@ function jbr_options_do_page() {
 
 	<div class="wrap">
 
-		<h2>Options du thème</h2>
+		<h2><?php _e('Theme options', 'jbr'); ?></h2>
 		
 		<?php if( isset($_GET['settings-updated']) ) : ?>
 		<div id="message" class="updated" style="margin-top: 20px;"><p>Mise à jour réussie. <a href="<?php echo home_url(); ?>">Afficher la page d'accueil</a></p></div>
