@@ -10,6 +10,17 @@
   }
 }
 
+@mixin background-image-retina($file, $type, $width, $height) {
+  background-image: url('../images/' + $file + '.' + $type);
+ 
+  @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+    & {
+      background-image: url('../images/' + $file + '@2x.' + $type);
+      -webkit-background-size: $width $height;
+    }
+  }
+}
+
 /* !inline-block */
 @mixin inline-block($alignment: none) {
   display: -moz-inline-stack;
